@@ -16,7 +16,11 @@
 #section .ingredients {
   z-index: 999;
 }
-#section .ingredients.active {
+#section .ingredients .erkey {
+  opacity: 0;
+  visibility: hidden;
+}
+#section .ingredients .erkey.active {
   opacity: 1;
   visibility: visible;
 }
@@ -34,13 +38,7 @@
   width: 300px;
   height: 99.7vh;
   background-color: rgb(19, 215, 19);
-  opacity: 0;
-  visibility: hidden;
   transition: 0.3s;
-}
-#section .ingredients .crust .dropcrust.active {
-  opacity: 1;
-  visibility: visible;
 }
 #section .ingredients .crust .dropcrust .circle {
   width: 250px;
@@ -79,12 +77,6 @@
   width: 300px;
   height: 99.7vh;
   background-color: rgb(70, 70, 255);
-  opacity: 0;
-  visibility: hidden;
-}
-#section .ingredients .sauce .dropsauce.active {
-  opacity: 1;
-  visibility: visible;
 }
 #section .ingredients .sauce .dropsauce .img1 {
   margin-top: 100px;

@@ -1,28 +1,44 @@
 'use strict';
 
 let crust = document.querySelector('.crust')
-let dropCrust = document.querySelector('.dropcrust')
+let erkey = document.querySelector('.erkey')
 let sauce = document.querySelector('.sauce')
 let ingredients = document.querySelectorAll('.ingredients')
+
+
+// for (let i = 0; i < ingredients.length; i++) {
+//     const kele = ingredients[i];
+//     kele.addEventListener('click', function(){
+//         erkey.classList.toggle('active')
+//     })
+    
+// }
+
 
 // crust.addEventListener('click', function(){
 //     dropCrust.classList.toggle('active')
 
 // })
 
-// ingredients.forEach(function(item){
-//     let header = item.querySelector('.crust')
-//     let content = item.querySelector('.dropcrust')
-
-//     header.onclick = function(){
-//         content.classList.toggle('active')
-//     }
-// })
-
-for (let i = 0; i < ingredients.length; i++) {
-    const qocu = ingredients[i];
-    qocu.addEventListener('click',function(){
-        
-    })
+ingredients.forEach(function(item){
+    let header = item.querySelector('.crust')
+    let content = item.querySelectorAll('.erkey')
+    let header2 = item.querySelector('.sauce')
+    let header3 = item.querySelector('.cheese')
     
-}
+
+
+    header.onclick=function(){
+        content[0].classList.toggle('active')
+    }
+    header2.onclick=function(){
+        content[1].classList.toggle('active')
+    }
+    header3.onclick=function(){
+        content[2].classList.toggle('active')
+    }
+
+    
+    
+})
+
